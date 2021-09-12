@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    #contaier{
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+       background: blanchedalmond;
+        grid-area: header;
+    }
+    #box1{
+        background: whitesmoke;
+        grid-area: box1;
+    }
+    #box2{
+        background: white;
+        grid-area: box2;
+    }
+    #sidebar{
+        background: darkslategray;
+        grid-area: sidebar;
+    }
+    footer{
+        background: darkturquoise;
+        grid-area: footer;
+    }
+</style>
+
+</head>
+<body>
+    <div id="contaier">
+        <nav>Easy Box</nav>
+        <div id="box1">box1</div>
+        <div id="box2"> box2</div>
+        <div id="sidebar">sidebar</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

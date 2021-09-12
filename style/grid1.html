@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .2fr 1.5fr 1.5fr .3fr;
+        height: 100vh; */
+        grid-template-areas: "nav nav nav nav"
+         "sidebar main main main"
+          "sidebar left left right" 
+          "sidebar footer footer footer";
+          font-family: sans-serif;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 600;
+       } 
+       nav{
+           background: indianred;
+           grid-area: nav;
+       }
+       main{
+           background: khaki;
+        grid-area: main;
+       }
+       #sidebar{
+           background: lawngreen;
+           grid-area: sidebar;
+       }
+       #left{
+           grid-area: left;
+           background: lightcoral;
+       }
+       #right{
+           grid-area: right;
+           background: lightskyblue;
+       }
+       footer{
+           grid-area: footer;
+           background:mediumorchid;
+       }
+       @media only screen and(max-width:768px){
+           .container{
+               display: grid;
+               grid-template-columns: 1fr;
+               grid-template-rows: .4fr 2fr 1.5fr 1.5fr 1fr .6fr;
+               grid-template-areas: "nav" "sidebar" "main"
+                "left" "right" "footer";
+           }
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>navbar</nav>
+        <main>Main</main>
+        <div id="sidebar">Sidebar</div>
+        <div id="left">left</div>
+        <div class="right">right</div>
+        <footer>footer</footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=h1, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #grad1 {
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(red, yellow);
+            }
+
+            #grad2 {
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to right, red, yellow);
+            }
+
+            #grad3 {
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to bottom right, red, yellow);
+
+            }
+
+            #grad4 {
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(red, yellow, green);
+
+            }
+
+            #grad5 {
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to right, red, yellow, green, violet, blue, orange);
+
+            }
+
+            #grad6 {
+                height: 200px;
+                background-color: red;
+                /* background-image: linear-gradient(45deg, red, yellow 7%, green 20%); */
+                background-image: linear-gradient(190deg, red, yellow 7%, green 10%);
+
+            }
+
+            #grad7 {
+                height: 200px;
+                width: 150px;
+                background-color: red;
+                background-image: radial-gradient(red, yellow, green)
+            }
+
+            #grad8 {
+                height: 200px;
+                width: 150px;
+                background-color: red;
+                background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+            }
+
+            #grad9 {
+                height: 150px;
+                width: 150px;
+                background-color: red;
+                background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+            }
+
+            #grad10 {
+                height: 150px;
+                width: 150px;
+                background-color: red;
+                background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            Liner Gradient - Top to Bottom
+        </h1>
+        <p>This is linear gradient starts red
+            at the top teansiitioning to yellow
+            at the bottom.</p>
+        <div id="grad1"></div>
+        <hr style="background-color: seagreen; height: 3px;">
+        <div id="grad2"></div> <br>
+        <div id="grad3" style="text-align: center;"> 180deg</div> <br>
+        <div id="grad4"></div> <br>
+        <div id="grad5" style="text-align: center; color: slategrey;font-size: 40px; 
+        font-weight: bold;">Rainbow
+            Background</div>
+
+        <div id="grad6"></div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr);">
+            <div id="grad7"></div>
+            <div id="grad8"></div>
+            <div id="grad9"></div>
+            <div id="grad10"></div>
+        </div>
+
+    </body>
+
+</html>

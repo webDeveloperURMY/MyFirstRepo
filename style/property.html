@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <style>
+      #main{
+         width: 200px;
+         height: 150px;
+         border: 2px solid #c3c3c3;
+         display: flex;
+         flex-wrap: wrap;
+        align-content: center;
+
+     } 
+     #main div {
+         width: 50px;
+         height: 50px;
+     } 
+ 
+    div {
+         color: red;
+     }
+
+ </style>   
+
+</head>
+<body>
+    <h1>The align content property</h1>
+
+ <div id="main">
+    <div style="background-color: coral;">A</div>
+    <div style="background-color: lightblue;">B</div>
+    <div style="background-color:khaki;">C</div>
+    <div style="background-color: lightgray;">D</div>
+    <div style="background-color: lightgreen;">E</div>
+    <div style="background-color: pink;">F</div>
+</div>
+
+<div>
+    <h1 id="bc">Hello World</h1>
+    <ul>
+        <li id="a">Item one</li>
+        <li id="b">Item two</li>
+        <li id="c">Item three</li>
+    </ul>
+</div>
+
+    <!-- <p> <b>Note:</b> Internet Explorer 10 and earlier versions do not support the align content property. </p>
+<p>click the <q>Try it</q> button to set the value if the flexwrap property to "nowrap".</p>
+
+<button onclick="myFunction()">try it</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("main").style.flexWrap = "nowrap"
+    }
+</script> -->
+
+<p>click the "Try it" button to set value of the color
+     property to "initial" for the second list item:</p>
+
+
+<button onclick="myFunction()">Try it</button>
+<script>
+    Function myFunction() {
+        document.getElementById("b").style.color = "initial";
+    }
+</script>
+
+<p><b>Note:</b> The "initial" keyword is not supported in
+    Internet Explorer 11 and earliar version.</p>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+/* same as above */
+    font: bold 20px arial, helvetica;
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: violet;
+}
+
+.clr{
+    clear: both;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+    color: lime;
+}
+
+
+
+a:active{
+    color: green;
+}
+
+.box-1{
+    background-color:#333;
+    color: white;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+/* same as above */
+    padding: 20px 30px;
+
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px; */
+
+    margin: 20px;
+
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+
+}
+
+.box-1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    word-spacing: .5em;
+    letter-spacing: 0.2em;
+}
+
+.box-1 p{
+    text-align: justify;
+}
+
+.box-2{
+    border: 2px dotted #333;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.box-2 h1{
+    text-align: center;
+}
+
+.box-2 p{
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.categories{
+    border: 2px solid #333;
+    margin: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.categories h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.categories ul{
+    padding: 20px;
+    list-style: square;
+    list-style: none;
+
+}
+
+.categories ul li{
+    border-bottom: 2px dotted #333;
+    
+
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .fora-group{
+    padding-bottom: 15px;
+}
+
+.my-form input[type="text"],
+.my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 170px;
+    box-sizing: border-box;
+    border: black solid 1px;
+    padding: 10px;
+}
+
+.main-block{
+    margin-top: 20px;
+    width: 70%;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.sidebar{
+    margin-top: 20px;
+    float: right;
+    width: 30%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.p-box{
+    border: 1px solid black;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+    background-image: url(../img/light.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.p-box h2{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+
+.fix-me{
+    top: 400px;
+    left: 0px;
+    position: fixed;
+}
+
+.my-list{
+    margin-left: 40px;
+    list-style: none;
+}
+
+/* .my-list li:first-child{
+    background-color: red;
+} */
+
+.my-list li:last-child{
+    background-color:greenyellow;
+}
+
+/* .my-list li:nth-child(5){
+    background-color:green;
+} */
+
+.my-list li:nth-child(even){
+    background-color:blue;
+}
+
+.my-list li:nth-child(odd){
+    background-color:red;
+}
